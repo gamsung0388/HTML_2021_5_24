@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 입력받기</title>
+</head>
+<body>
+    <h2>데이터 입력 받기</h2>
+    <form action="">
+    
+        <label>이름: </label> 
+        <input type="text" placeholder="이름을 입력해주세요"><br>
+        <label>아이디:</label>
+        <input type="text" placeholder="아이디를 입력해주세요"><br>
+        <label for = "passwd">패스워드: 
+        <input id= "passwd" type = "password" name="passwd" placeholder="비밀번호를 입력해주세요">
+            <br></label>
+        <label>출생년도: <input type="number" name="birthYear" min = "18" max="100">
+            <br></label>
+        <label>이메일<input type="email" name="email" placeholder="이메일를 입력해주세요"> 
+            <br></label>
+        <label>전화번호<input type="tel" name="phone" placeholder="012-1234-1234">
+            <br></label>
+            <!-- 서버는 name으로 데이터 구분 -->
+        <fieldset>
+            <legend>성별</legend>
+            <input type="radio" name="gender">여자
+            <input type="radio" name="gender">남자
+        </fieldset>
+        
+            
+        <!-- checkbox: 여러개 선택가능 -->
+        <fieldset>
+            <legend>스킬</legend>
+            <input type="checkbox" name="skill">html
+            <input type="checkbox" name="skill">css
+            <input type="checkbox" name="skill">JavaScript
+            <input type="checkbox" name="skill">java
+            <input type="checkbox" name="skill">c
+            <input type="checkbox" name="skill">python
+            <input type="checkbox" name="skill">오라클
+        </fieldset>
+        <hr>
+        <select name="langGroup">
+            <option>파이썬반</option >
+            <option>자바반</option>
+            <option>오라클반</option>
+        </select><hr>
+        볼륨:
+        <input type="range" min="1" max="6" onchange="100">
+        <hr>
+        온도계
+        <input type="range" list="tickmarks">
+        <datalist id = "tickmarks">
+            <option value="0" label = "0%"></option>
+            <option value="10" ></option>
+            <option value="20" ></option>
+            <option value="30" ></option>
+            <option value="40" ></option>
+            <option value="50" label = "50%"></option>
+            <option value="60" ></option>
+            <option value="70" ></option>
+            <option value="80" ></option>
+            <option value="90" ></option>
+            <option value="100" label = "100%"></option>
+        </datalist>
+        <hr>
+        <label >입사날짜</label>
+            <input type="date" name="joindate">
+        <hr>
+        메모<br>
+        <textarea cols="50" rows="5" name="content"></textarea><hr>
+        로딩중
+        <progress  value="50" max ="100">
+        </progress>
+        <hr>
+        <input type="color">
+        <input type="file">
+        
+        <hr>
+        <!-- 일반버튼 -->
+            <input type="button" value="확인"> 
+            <!-- 데이터전송 기능이 포함된 버튼 form안의 데이터를 전송-->
+            <input type="submit" value="취소">
+            <!-- 데이터전송 기능이 포함된 버튼 -->
+        <button>버튼</button>
+
+
+    
+
+     </form>
+    </body>
+</html>
